@@ -8,7 +8,7 @@ So far uptake in the game has been great, users are really enjoying playing each
 There are two requirements in the implementation:  
 1. The solution must read Thrift messages off of a Kafka instance, and store the results in a persistent data store  
 2. The end results must be served via HTTP get requests, and return results as JSON  
-There are **no** other requirements! You can use whatever technology/language you like! At a high level, you will need three pieces:
+There are **no** other requirements! You can use whatever technology/language you like! At a high level, you will need three pieces:  
 1. A processor for reading the Thrift messages off the Kafka queue and persist them  
 2. A datastore of some kind that will hold the the data you have read  
 3. A server that will respond to REST requests as follows:  
