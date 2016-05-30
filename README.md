@@ -8,7 +8,7 @@ The goal here is to create a REST API that serves aggregated metrics created fro
 1. Linux (or Windows with Cygwin): you will need to be able to execute .sh scripts to run Kafka and the project locally. I recommend doing this on a VM using Virtual Box, though as long as you can run Kafka you are all set!
 2. a distribution of Kafka: download the distribution here, and unpack it http://kafka.apache.org/downloads.html
 3. sbt, or Simple Build Tool: in order to run the tests and get access to the Java protocol buffer defintions, you need to download and compile the project. Typesafe provide binary distributions of sbt here http://www.scala-sbt.org/0.13/docs/Setup.html, and it is very easy to install.
-4. Clone this repo: "git clone... <your crazy-cricket dir>; cd <your crazy-cricket dir>; sbt", which should clone the project into <your crazy-cricket dir>, and fire up sbt, which will compile and build the project.
+4. Clone this repo: "git clone... YOURLOCAL_DIR; cd YOURLOCAL_DIR; sbt", which should clone the project into YOURLOCAL_DIR, and fire up sbt, which will compile and build the project.
 5. Create a project of your own with a solution: there is only one requirement, that the project contians a directory called bin, and a shell script "bin/run.sh <kafka broker>" which starts your REST API and any other components (databases, Kafka consumers, etc), and connects to the Kafka broker specified as an argument.
 
 ## Task
