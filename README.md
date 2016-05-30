@@ -8,7 +8,7 @@ The goal here is to create a REST API that serves aggregated metrics created fro
 1. Linux (or Windows with Cygwin): you will need to be able to execute .sh scripts to run Kafka and the project locally. I recommend doing this on a VM using Virtual Box, though as long as you can run Kafka you are all set!
 2. a distribution of Kafka: download the distribution [here](http://kafka.apache.org/downloads.html), and unpack it
 3. sbt, or Simple Build Tool: in order to run the tests and get access to the Java protocol buffer defintions, you need to download and compile the project. Typesafe provide binary distributions of sbt [here](http://www.scala-sbt.org/0.13/docs/Setup.html), and it is very easy to install.
-4. Clone this repo: `git clone... <your dir>; cd <your dir>; sbt`, which should clone the project into YOUR_LOCAL_DIR, and fire up sbt, which will compile and build the project.
+4. Clone this repo: `git clone... <your dir>; cd <your dir>; sbt`, which should clone the project into `<your dir>`, and fire up sbt, which will compile and build the project.
 5. Create a project of your own with a solution: there is only one requirement, that the project contians a directory called bin, and a shell script `bin/run.sh <kafka host:port>` which starts your REST API and any other components (databases, Kafka consumers, etc), and connects to the Kafka broker specified as an argument.
 
 ## Task
@@ -23,13 +23,14 @@ There are **no** other requirements! You can use whatever technology/language yo
   * Date range leaderboard: `GET <server address>/api/leaderboard?start=yyyyMMdd&end=yyyyMMdd`  
   * Current country leaderboard: `GET <server address>/api/national_leaderboard`  
   * Date range country leaderboard: `GET <server address>/api/national_leaderboard?start=yyyyMMdd&end=yyyyMMdd`  
-Also JSON should be formatted as {[name_1,value_1],...,[name_k,value_k]}
+Also JSON should be formatted as `{[name_1,value_1],...,[name_k,value_k]}`
 
 My shell script, `bin/setup.sh <kafka home>`, will configure a local Kafka cluster with some preloaded messages that you can use to test your code, provided have the Kafka distribution properly unpacked in whatever directory you pass in as an argument.
 
 ## Grading Rubric
-1. Unit tests: we expect to see thoughtful unit tests
-2. Coding style: our team is pretty into code being clear and concise!
-3. Design decisions: this essentially a design test, in the sense that it is really asking you to design a system for capturing and presenting data via a pre-defined interface. We are most interested not in which technologies you chose, but in **why** you chose them, and if the way that you used them demonstrated a clear understanding of that technology.
+First and foremost, this is a time consuming test, and successfully executing it will put a candidate in a superb position to land a job, with the important caveat that the in person interview must convince us the candidate did the work independently (it's okay to use Google, in fact that's part of the test!). More specifically we will be looking at:
+1. Unit tests: we would like to see unit tests
+2. Coding style: clear and concise code is always preferred
+3. Design decisions: this essentially a design test, in the sense that it is really asking you to design a system for capturing and presenting data via a specified interface. We are most interested not in which technologies you chose, but in **why** you chose them, and if the way that you used them demonstrated a clear understanding of that technology.
 
 
