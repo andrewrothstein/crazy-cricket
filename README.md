@@ -39,4 +39,5 @@ First and foremost, this is a time consuming test, and successfully executing it
    2. Coding style: clear and concise code is always preferred  
    3. Design decisions: this essentially a design test, in the sense that it is really asking you to design a system for   capturing and presenting data via a specified interface. We are most interested not in which technologies you chose, but in **why** you chose them, and if the way that you used them demonstrated a clear understanding of that technology.
 
-
+## Final Words
+Good luck, and please feel free to post questions in the "Issues" section!
