@@ -34,9 +34,9 @@ Also JSON should be formatted as `{[name_1,value_1],...,[name_k,value_k]}`
 My shell script, `bin/setup.sh <kafka home>`, will configure a local Kafka cluster with some preloaded messages that you can use to test your code, provided have the Kafka distribution properly unpacked in whatever directory you pass in as an argument.
 
 ## Grading Rubric
-First and foremost, this is a time consuming test, and successfully executing it will put a candidate in a superb position to land a job, with the important caveat that the in person interview must convince us the candidate did the work independently (it's okay to use Google, in fact that's part of the test!). More specifically we will be looking at:
-1. Unit tests: we would like to see unit tests  
-2. Coding style: clear and concise code is always preferred  
-3. Design decisions: this essentially a design test, in the sense that it is really asking you to design a system for   capturing and presenting data via a specified interface. We are most interested not in which technologies you chose, but in **why** you chose them, and if the way that you used them demonstrated a clear understanding of that technology.
+First and foremost, this is a time consuming test, and successfully executing it will put a candidate in a superb position to land a job, with the important caveat that the in person interview must convince us the candidate did the work independently (it's okay to use Google, in fact that's part of the test!). More specifically we will be looking at:  
+   1. Unit tests: we would like to see unit tests  
+   2. Coding style: clear and concise code is always preferred  
+   3. Design decisions: this essentially a design test, in the sense that it is really asking you to design a system for   capturing and presenting data via a specified interface. We are most interested not in which technologies you chose, but in **why** you chose them, and if the way that you used them demonstrated a clear understanding of that technology.
 
 
