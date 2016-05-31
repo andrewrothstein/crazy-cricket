@@ -10,10 +10,10 @@ A few things to bear in mind if you take on this test:
 Enough preamble, let's jump into the detail...
 
 # Crazy Cricket
-Welcome to crazy cricket, the greatest Cricket Video game on earth! You have been recruited to help our Anaytics Team team make the game more engaging for users, driving growth in the user base! In conjuction with the product manager for the game we have decided that an REST API that allows us to publish league tables will be the catalyst for an explosion of interest in the game!
+Welcome to crazy cricket, the greatest Cricket Video game on earth! You have been recruited to help our Analytics Team team make the game more engaging for users, driving growth in the user base! In conjuction with the product manager for the game we have decided that an REST API that allows us to publish league tables will be the catalyst for an explosion of interest in the game!
 
 ## High Level
-The goal here is to create a REST API that serves aggregated metrics created from a data source. In this case the data source will be a Kafka instance where the topics are protocol buffer objects that represent game results. Your task is to provide a REST API that returns correct aggregated tables of the data that comes of the Kafka topics. If you don't know Kafka, or protocol buffers, that shouldn't be a problem as you really don't need to know much about either to execute the project, though it will necessitate a few additional hours of reading to get familiar with those tools.
+The goal here is to create a REST API that serves aggregated metrics created from a data source. In this case the data source will be a Kafka instance where the topics are protocol buffer objects that represent game results. Your task is to provide a REST API that returns correct aggregated tables of the data that comes off of the Kafka topics. If you don't know Kafka, or protocol buffers, that shouldn't be a problem as you really don't need to know much about either to execute the project, though it will necessitate a few additional hours of reading to get familiar with those tools.
 
 ## Setup and submission requirements  
 1. Linux (or Windows with Cygwin): you will need to be able to execute .sh scripts to run Kafka and the project locally. I recommend doing this on a VM using Virtual Box, though as long as you can run Kafka you are all set!
@@ -28,7 +28,7 @@ There are two requirements in the implementation:
    2. The end results must be served via HTTP get requests, and return results as JSON. The format of the required JSON is specified below.  
 
 There are **no** other requirements! You can use whatever technology/language you like! At a high level, you will need three pieces:  
-   1. A processor for reading the Protobuf messages off the Kafka queue and persisting them in some form, which is most certainly an important design decision  
+   1. A processor for reading the Protobuf messages off of the Kafka topics and persisting them in some form, which is itself an interesting design decision you will have to make  
    2. A datastore of some kind that will hold the the data you have read  
    3. A server that will respond to REST requests as follows:  
     * Current leaderboad:  
@@ -42,7 +42,7 @@ There are **no** other requirements! You can use whatever technology/language yo
 
 Also JSON should be formatted as `{[name_1,value_1],...,[name_k,value_k]}`
 
-My shell script, `bin/setup.sh <kafka home>`, will configure a local Kafka cluster with some preloaded messages that you can use to test your code, provided have the Kafka distribution properly unpacked in whatever directory you pass in as an argument.
+My shell script, `bin/setup.sh <kafka home>`, will configure a local Kafka cluster with some preloaded messages that you can use to test your code, provided you have the Kafka distribution properly unpacked in whatever directory you pass in as an argument.
 
 ## Grading Rubric
 First and foremost, this is a design test. Given a set of constraints on input and output we are interested in the details of your implementation when you make all the decisions yourself. More specifically we will be looking at:  
