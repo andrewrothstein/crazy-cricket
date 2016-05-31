@@ -1,3 +1,14 @@
+# Background
+The \<team\> is building out our engineering presence in Gurgoan, and we are seeking exceptional candidates to fill several rolls on our team. We believe that the successful candidate will have a high degree of technical aptitude, a *creative* problem solver, and most of all engaged. We have created this test in order to let candidate show us how excited they are about the kinds of technical challenges we face, and also to give them the opporunity to show their technical skill and creative problem solving.
+
+A few things to bear in mind if you take on this test:
+   1. It is intentionally a lot of work, and we expect that anyone who completes has put themselves in an excellent position to recieve an offer, provided we are convinced they have done the work. The in person technical interview will mainly explore questions about design and algorithms and come out of your solution.   
+   2. We absolutely have *no expectation* that you are familiar with all of the tools and technologies used here (Java, Kafka, Protocol Buffers, and then whatever you choose to use in your solution). Indeed part of the test is to see how candidates handle an unfamiliar problem with an unfamiliar toolchain. Expect to use Google a lot, you ***will not*** find the answers to these problems in textbooks, and it will certainly require a combination of technical know-how, reading/**understanding** documentation,  creativitiy, and determination to complete. That's exactly the point, those are the attributes we are looking for in a successful candidate.  
+   3. We are very much interested in the decisions *you* make. We are no interested in telling people what to do, we want to hire people that can synthesize business problems into slick technical solutions that create business value without the need to micro-manage and dictate projects. We want to know the kind of decisions you make, and the kind of work you do, when given an open ended problem with intentionally few requirements.
+   4. The few requirements, read Protocol Buffers from Kafka and server data over HTTP as JSON via a REST API, are hard requirements. Indeed, doing those things successfully exactly as specified are the only requirements.
+
+Enough preamble, let's jump into the detail...
+
 # Crazy Cricket
 Welcome to crazy cricket, the greatest Cricket Video game on earth! You have been recruited to help our Anaytics Team team make the game more engaging for users, driving growth in the user base! In conjuction with the product manager for the game we have decided that an REST API that allows us to publish league tables will be the catalyst for an explosion of interest in the game!
 
@@ -34,7 +45,7 @@ Also JSON should be formatted as `{[name_1,value_1],...,[name_k,value_k]}`
 My shell script, `bin/setup.sh <kafka home>`, will configure a local Kafka cluster with some preloaded messages that you can use to test your code, provided have the Kafka distribution properly unpacked in whatever directory you pass in as an argument.
 
 ## Grading Rubric
-First and foremost, this is a time consuming test, and successfully executing it will put a candidate in a superb position to land a job, with the important caveat that the in person interview must convince us the candidate did the work independently (it's okay to use Google, in fact that's part of the test!). More specifically we will be looking at:  
+First and foremost, this is a design test. Given a set of constraints on input and output we are interested in the details of your implementation when you make all the decisions yourself. More specifically we will be looking at:  
    1. Unit tests: we would like to see unit tests  
    2. Coding style: clear and concise code is always preferred  
    3. Design decisions: this essentially a design test, in the sense that it is really asking you to design a system for   capturing and presenting data via a specified interface. We are most interested not in which technologies you chose, but in **why** you chose them, and if the way that you used them demonstrated a clear understanding of that technology.
